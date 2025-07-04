@@ -121,6 +121,8 @@ assign_palette() {
 
     echo "$palette" > "$palette_file"
     echo "Assigned palette '$palette' to $image_path"
+    wallpaper load
+    clear
     exit 0
 }
 

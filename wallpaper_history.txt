@@ -27,3 +27,8 @@
 /home/tomas/Projects/Bash/WallpaperChanger/wallpapers/train.png
 /home/tomas/Projects/Bash/WallpaperChanger/wallpapers/lab.png
 /home/tomas/Projects/Bash/WallpaperChanger/wallpapers/View.png
+/home/tomas/Projects/Bash/WallpaperChanger/wallpapers/InitialD-AE86.png
+/home/tomas/Projects/Bash/WallpaperChanger/wallpapers/View.png
+/home/tomas/Projects/Bash/WallpaperChanger/wallpapers/Ferry.png
+/home/tomas/Projects/Bash/WallpaperChanger/wallpapers/InitialD-RX7.png
+/home/tomas/Projects/Bash/WallpaperChanger/wallpapers/NightTokyo.png
