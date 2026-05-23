@@ -3,7 +3,11 @@
 # Get the directory of the script
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 wallpapers_dir="${script_dir}/wallpapers"
-files=("${wallpapers_dir}"/*)
+files=()
+while IFS= read -r -d '' file; do
+    files+=("$file")
+done < <(find "$wallpapers_dir" -type f ! -name "*.palette" -print0)
+
 waybar_template=~/.config/waybar/waybar-colors.css
 
 # History file to track wallpaper usage
@@ -247,6 +251,8 @@ case $1 in
 esac
 
 # Preload the wallpaper for faster switching
+echo "preloading $wallpaper_path"
+
 hyprctl hyprpaper preload "$wallpaper_path"
 
 # Set the wallpaper on all monitors
